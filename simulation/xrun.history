@@ -1,0 +1,20 @@
+#e1(20Aug2026:18:11:32): source ./xcelium.d/env.d/env.history.20Aug2026_18_11_32
+s1(20Aug2026:18:11:32):  xrun -f filelist.f 
+#e2(20Aug2026:18:55:09): source ./xcelium.d/env.d/env.history.20Aug2026_18_55_09
+s2(20Aug2026:18:55:09):  xrun -gui -access -rwc+ 
+#e3(20Aug2026:18:56:41): source ./xcelium.d/env.d/env.history.20Aug2026_18_56_41
+s3(20Aug2026:18:56:41):  xrun -gui -access +rwc -f filelist.f 
+#e4(20Aug2026:18:58:33): source ./xcelium.d/env.d/env.history.20Aug2026_18_58_33
+s4(20Aug2026:18:58:33):  xrun -gui -access +rwc -f filelist.f 
+#e5(20Aug2026:19:01:23): source ./xcelium.d/env.d/env.history.20Aug2026_19_01_23
+s5(20Aug2026:19:01:23):  xrun -gui -access +rwc -f filelist.f 
+#e6(20Aug2026:19:01:58): source ./xcelium.d/env.d/env.history.20Aug2026_19_01_58
+s6(20Aug2026:19:01:58):  xrun -gui -access +rwc -f filelist.f 
+#e7(20Aug2026:19:02:47): source ./xcelium.d/env.d/env.history.20Aug2026_19_02_47
+s7(20Aug2026:19:02:47):  xrun -gui -access +rwc -f filelist.f 
+#e8(21Aug2026:21:49:24): source ./xcelium.d/env.d/env.history.21Aug2026_21_49_24
+s8(21Aug2026:21:49:24):  xrun -gui -access +rwc -f filelist.f 
+#e9(21Aug2026:21:59:41): source ./xcelium.d/env.d/env.history.21Aug2026_21_59_41
+s9(21Aug2026:21:59:41):  xrun -gui -access +rwc -f filelist.f 
+#e10(22Aug2026:13:16:30): source ./xcelium.d/env.d/env.history.22Aug2026_13_16_30
+s10(22Aug2026:13:16:30):  xrun -gui -access +rwc -f filelist.f 
