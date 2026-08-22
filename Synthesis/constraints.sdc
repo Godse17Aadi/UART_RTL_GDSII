@@ -17,7 +17,7 @@ set MIN_IO_DELAY 0.1
 
 ## CLOCK BASICS
 #Creating Clock
-create_clock -name "clock" -period $PERIOD [get_ports wb_clk_i]
+create_clock -name "clock" -period $PERIOD [get_ports clk]
 
 #CLock Latency
 set_clock_latency $CLOCK_LATENCY [get_clocks clock]
@@ -64,16 +64,14 @@ group_path  -name COMBO\
             -weight 1
 #Do not perform normal timing analysis on paths starting from these reset ports.
 
-set_false_path -from [list [get_ports wb_rst_i] [get_ports arst_i]]
-
+set_false_path -from [get_ports rst]
 set_false_path -from [get_ports rx]
 # rx is an asynchronous serial input -- excluded from synchronous timing
 
 #---------------------------
 
 ## IN/OUT
-set INPUTPORTS  [remove_from_collection [all_inputs] \
-                    [list [get_ports wb_clk_i] [get_ports wb_rst_i] [get_ports arst_i]]]
+set INPUTPORTS  [remove_from_collection [all_inputs] [list [get_ports clk] [get_ports rst]]]
 set OUTPUTPORTS [all_outputs]
 
 #External input data can arrive up to 0.5 ns after the clock reference edge  
