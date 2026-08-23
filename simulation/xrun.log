@@ -1,5 +1,5 @@
 xrun(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.09-s005: Started on Aug 22, 2026 at 13:16:30 IST
+TOOL:	xrun(64)	24.09-s005: Started on Aug 21, 2026 at 21:59:41 IST
 xrun
 	-gui
 	-access +rwc
@@ -9,11 +9,11 @@ xrun
 		uart_tx.v
 		uart_top_design.v
 		uart_tb.v
-Recompiling... reason: file './uart_top_design.v' is newer than expected.
-	expected: Thu Aug 20 19:02:40 2026
-	actual:   Sat Aug 22 13:08:47 2026
-file: uart_top_design.v
-	module worklib.uart_top_design:v
+Recompiling... reason: file './uart_tb.v' is newer than expected.
+	expected: Fri Aug 21 21:48:40 2026
+	actual:   Fri Aug 21 21:59:36 2026
+file: uart_tb.v
+	module worklib.uart_tb:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
@@ -21,8 +21,8 @@ file: uart_top_design.v
 		uart_tb
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.uart_top_design:v <0x3ec69f88>
-			streams:   4, words:  1880
+		worklib.uart_tb:v <0x4c1d0ef1>
+			streams:  10, words: 10726
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -43,20 +43,10 @@ xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mod
 Relinquished control to SimVision...
 xcelium> 
 xcelium> source /home/cadence/install_RB_8.7/XCELIUM2409/tools/xcelium/files/xmsimrc
-xcelium> run
-xmsim: *W,VCDFOP: Unable to open VCD file ./temp/UART_tb.vcd (check file permissions).
-            Time: 0 FS + 1
-
-Simulation complete via $finish(1) at time 1645610 NS + 0
-./uart_tb.v:89         #500000 $finish;
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
 xcelium> probe -create -shm uart_tb.uut.address uart_tb.uut.baud_division uart_tb.uut.baud_tick uart_tb.uut.clk uart_tb.uut.data_in uart_tb.uut.data_out uart_tb.uut.enable uart_tb.uut.re uart_tb.uut.read_data uart_tb.uut.rst uart_tb.uut.rx uart_tb.uut.tx uart_tb.uut.we uart_tb.uut.write_data
 Created probe 1
-xcelium> run
-xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
-xcelium> reset
-Loaded snapshot worklib.uart_tb:v
 xcelium> run
 xmsim: *W,VCDFOP: Unable to open VCD file ./temp/UART_tb.vcd (check file permissions).
             Time: 0 FS + 1
@@ -65,4 +55,4 @@ Simulation complete via $finish(1) at time 1645610 NS + 0
 ./uart_tb.v:89         #500000 $finish;
 xcelium> ^C
 xcelium> exit
-TOOL:	xrun(64)	24.09-s005: Exiting on Aug 22, 2026 at 13:41:05 IST  (total: 00:24:35)
+TOOL:	xrun(64)	24.09-s005: Exiting on Aug 21, 2026 at 22:10:24 IST  (total: 00:10:43)

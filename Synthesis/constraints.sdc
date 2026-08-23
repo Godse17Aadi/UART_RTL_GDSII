@@ -2,7 +2,9 @@
 reset_design
 
 #VARIABLES
-set PERIOD  50.0 #20MHz	
+set PERIOD 10.0
+#A 100 MHz system clock was selected as a practical and commonly used digital system clock. The UART operates at 9600 baud using a baud-rate generator with 16× oversampling. Therefore, the required oversampling #tick frequency is 9600 × 16 = 153.6 kHz. A 100 MHz clock can be divided by approximately 651 to generate this timing accurately. The 10 ns clock period was therefore used as the synthesis timing constraint, and #the design was verified to meet the required timing constraints
+#otherwise the period can go well below 0.7ns 
 set INPUT_DELAY  0.5
 set OUTPUT_DELAY  0.5
 set CLOCK_LATENCY 0.25
@@ -66,6 +68,7 @@ group_path  -name COMBO\
 
 set_false_path -from [get_ports rst]
 set_false_path -from [get_ports rx]
+
 # rx is an asynchronous serial input -- excluded from synchronous timing
 
 #---------------------------
@@ -89,5 +92,6 @@ set_max_transition $MAX_TRANSITION [current_design]
 set_max_fanout 30 [current_design]
 
 set_max_capacitance 80 [current_design]
+
 
 

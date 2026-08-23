@@ -16,5 +16,3 @@ s7(20Aug2026:19:02:47):  xrun -gui -access +rwc -f filelist.f
 s8(21Aug2026:21:49:24):  xrun -gui -access +rwc -f filelist.f 
 #e9(21Aug2026:21:59:41): source ./xcelium.d/env.d/env.history.21Aug2026_21_59_41
 s9(21Aug2026:21:59:41):  xrun -gui -access +rwc -f filelist.f 
-#e10(22Aug2026:13:16:30): source ./xcelium.d/env.d/env.history.22Aug2026_13_16_30
-s10(22Aug2026:13:16:30):  xrun -gui -access +rwc -f filelist.f 

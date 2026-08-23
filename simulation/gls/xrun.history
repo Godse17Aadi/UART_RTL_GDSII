@@ -1,0 +1,4 @@
+#e1(22Aug2026:23:00:29): source ./xcelium.d/env.d/env.history.22Aug2026_23_00_29
+s1(22Aug2026:23:00:29):  xrun -f filelist -access +rwc -gui 
+#e2(22Aug2026:23:01:16): source ./xcelium.d/env.d/env.history.22Aug2026_23_01_16
+s2(22Aug2026:23:01:16):  xrun -f filelist -access +rwc -gui 

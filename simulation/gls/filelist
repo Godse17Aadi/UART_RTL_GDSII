@@ -1,0 +1,6 @@
+lib/verilog/slow_vdd1v0_basicCells_hvt.v
+lib/verilog/slow_vdd1v0_basicCells_lvt.v
+lib/verilog/slow_vdd1v0_basicCells.v
+
+uart_netlist.v 
+uart_tb.v
