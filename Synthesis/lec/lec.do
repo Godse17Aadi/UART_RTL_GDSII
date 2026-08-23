@@ -25,8 +25,6 @@ compare
 report compare data -class nonequivalent -class abort -class notcompared
 report verification -verbose
 
-#to save report
-lec -dofile lec.do > reports/lec_report.txt
 
 
 
