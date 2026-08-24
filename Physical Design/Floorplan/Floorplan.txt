@@ -1,0 +1,62 @@
+Ring generation is complete.
+vias are now being generated.
+add_rings created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal10|        4       |       NA       |
+|  Via10 |        8       |        0       |
+| Metal11|        4       |       NA       |
++------------------------------------------+
+
+
+-------------------------------------------------------------------
+
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 6 wires.
+ViaGen created 12 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal10|        6       |       NA       |
+|  Via10 |       12       |        0       |
++--------+----------------+----------------+
+
+
+--------------------------------------------------------------------
+
+
+route_special created 81 wires.
+ViaGen created 1215 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       81       |       NA       |
+|  Via1  |       135      |        0       |
+|  Via2  |       135      |        0       |
+|  Via3  |       135      |        0       |
+|  Via4  |       135      |        0       |
+|  Via5  |       135      |        0       |
+|  Via6  |       135      |        0       |
+|  Via7  |       135      |        0       |
+|  Via8  |       135      |        0       |
+|  Via9  |       135      |        0       |
++--------+----------------+----------------+
+
+---------------------------------------------------------------------
+
+ *** Starting Verify DRC (MEM: 1520.9) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+  VERIFY DRC ...... Sub-Area: {0.000 0.000 62.200 60.800} 1 of 1
+  VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:00.0  ELAPSED TIME: 0.00  MEM: 256.1M) ***
